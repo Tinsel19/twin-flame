@@ -1430,7 +1430,7 @@ document.getElementById('match').addEventListener('click', ()=> {
     yENum = Number(yENum[yENum.length - 1]);
 
     var pENum = ((ptEPNum.textContent).trim()).split('/');
-    pENum = Number(pENum[yENum.length - 1]);
+    pENum = Number(pENum[pENum.length - 1]);
 
     var yHDNum = ((ytHDNum.textContent).trim()).split('/');
     yHDNum = Number(yHDNum[yHDNum.length - 1]);
@@ -1444,25 +1444,36 @@ document.getElementById('match').addEventListener('click', ()=> {
     var ppNum = ((ptPNum.textContent).trim()).split('/');
     ppNum = Number(ppNum[ppNum.length - 1]);
 
+    console.log(yENum, pENum);
+
 
     if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum !== pBNum & yENum !== pENum & ypNum !== ppNum) {
         percent.textContent = '70%'
+
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum !== ppNum) {
         percent.textContent = '90%'
+
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
         percent.textContent = '95%'
+
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum !== ppNum) {
         percent.textContent = '95%'
+
     } else if (yLpNum === pLpNum & yHDNum !== pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
         percent.textContent = '90%'
+
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
         percent.textContent = '100%'
+
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
-        percent.textContent = '99%'
+        percent.textContent = '99%';
+
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum !== ppNum) {
         percent.textContent = '70%'
+
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
         percent.textContent = '65%'
+
     } else {
         percent.textContent = '0%'
     }
@@ -1615,6 +1626,7 @@ document.getElementById('match').addEventListener('click', ()=> {
         }
     };
     lpText.innerHTML = initialText;
+
 
     
 
