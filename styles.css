@@ -194,6 +194,12 @@ select {
     font-weight: 400;
     border: 1px solid grey;
     padding: .4rem;
+    margin-bottom: 10px;
+}
+
+#lp2Text {
+    border: 1px solid grey;
+    padding: .4rem;
 }
 
 @media (max-width: 585px) {

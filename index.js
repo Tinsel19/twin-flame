@@ -40,12 +40,14 @@ document.getElementById('match').addEventListener('click', ()=> {
     if (yfName.value === '' || yYear.value === '' || pfName.value === '' || pYear.value === '') {
         document.getElementById('hide').style.display = 'none';
         document.getElementById('show').style.display = 'none';
-        lpText.style.display = 'none'
+        lpText.style.display = 'none';
+        document.getElementById('lp2Text').style.display = 'none'
 
     } else {
         document.getElementById('hide').style.display = 'block';
         document.getElementById('show').style.display = 'block';
-        lpText.style.display = 'block'
+        lpText.style.display = 'block';
+        document.getElementById('lp2Text').style.display = 'block'
     }
     
 
@@ -1454,6 +1456,9 @@ document.getElementById('match').addEventListener('click', ()=> {
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum !== ppNum) {
         percent.textContent = '90%';
 
+    } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum !== pBNum & yENum === pENum & ypNum === ppNum) {
+        percent.textContent = '90%';
+
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
         percent.textContent = '95%';
 
@@ -1479,7 +1484,7 @@ document.getElementById('match').addEventListener('click', ()=> {
         percent.textContent = '0%';
     }
 
-    var initialText = `
+    lpText.innerHTML = `
     <br> <br>
     <h2 class='orangeF'><b>Twin Flame Definition:</b></h2> <br> <br>
     &nbsp;A twin flame, also called a mirror soul or twin soul is somebody who has the same energy frequency as us. Twin flames are one soul divided into two bodies; therefore, your twin flame is you, or half of your soul in the other person's body. The twin flame connection is designed to bring up difficulties that you need to confront and learn about during this lifetime; your twin flame may challenge you to see the real you by pointing out your strength and flaws so that you can become your best self. Twin flames have comparable interests, strengths, talents, personality characteristics, and weaknesses. They have a strong sense of completeness, accomplishment, and oneness as a group. Twin flames may have comparable life experiences and histories, allowing individuals to bond over the same tragedies or joys.
@@ -1537,9 +1542,10 @@ document.getElementById('match').addEventListener('click', ()=> {
                 sum = 9
             }
         }
+        var initialText;
 
         if (sum === 1) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 1</b></h2> <br<br>
 
             You are here to lead and set the way for others if your twin life path is a 1. Furthermore, number
@@ -1552,7 +1558,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             <br>
             `
         } else if (sum === 2) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 2</b></h2> <br> <br>
             Your mission as a twin flame life path 2 is to enter into your purpose of deepening connection,
             cooperation, and harmony for yourself and the planet. To attain this goal, you must keep your
@@ -1563,7 +1569,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             compassion, and balance. <br>
             `
         } else if (sum === 3) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 3</b></h2> <br> <br>
             Learn to be cheerful, self-expressive, and creative if your twin life path is 3. Enjoy yourself and
             remember to pause to take a breath. You've come to accept this incredible gift of self-expression.
@@ -1573,7 +1579,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             expression. <br>
             `
         } else if (sum === 4) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 4</b></h2> <br> <br>
             You must first strengthen your personal foundation before you can walk into your spiritual life
             mission. Maintain your relationship's stability and order by remaining consistent and faithful to
@@ -1581,7 +1587,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             the number 4. <br>
             `
         } else if (sum === 5) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number: 5</b> </h2><br> <br>
             You should have an adventurous as well as freedom-loving spirit as a twin flame life path 5.
             Keep faith in your spiritual partner and remember that you are always united. Keep personal
@@ -1589,7 +1595,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             by the number 5. <br>
             `
         } else if (sum === 6) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 6</b></h2> <br> <br>
             As a twin flame life path 6, you should learn to prioritize yourself and take very good care of
             yourself first. Concentrate on you and learn to love yourself unconditionally. Follow the paths
@@ -1598,7 +1604,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             <br>
             `
         } else if (sum === 7) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 7 </b></h2> <br> <br>
             You must educate on how to be alone without feeling lonely as a 7-life path twin flame. Bring
             elements of yourself into focus, examine, cherish, and totally accept oneself. Work through and
@@ -1609,7 +1615,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             knowledge. <br>
             `
         } else if (sum === 8) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 8</b></h2> <br> <br>
             Regain your power and influence by learning how to do so. Avoid giving energy leeches your
             strength. To feel empowered and joyful, you don't need anything beyond yourself. Try to
@@ -1618,7 +1624,7 @@ document.getElementById('match').addEventListener('click', ()=> {
 
             `
         } else if (sum === 9) {
-            initialText += `
+            initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 9 </b</h2>> <br> <br>
             As a twin flame life path 9, you must completely love yourself. Consider the wider view of life
             and change. Develop forgiveness, acceptance, and charity, as well as a greater knowledge of one
@@ -1627,7 +1633,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         }
     };
-    lpText.innerHTML = initialText;
+    document.getElementById('lp2Text').innerHTML = initialText;
 
 
     
