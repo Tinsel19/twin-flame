@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Twin Flame Match</title>
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>Twin Flame / Twin Soul<br>Numerology Match</h1>
+    </div>
+
+    <section class="main-body">
+
+
+        <form class="two-cols">
+            <div class="div">
+
+                <div class="styled-input">
+                    <span class="span">Your Full Name at Birth</span>
+                    <input type="text" id="yfName" placeholder="Your first, middle & last name" required>
+                </div>
+
+                <span class="span">Your Date of Birth</span>
+
+                <select  id="yMonth" required>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select  id="yDay" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <input type="number" id="yYear" placeholder="year"  required>
+            </div>
+
+            <div class="div">
+                <div class="styled-input">
+                    <span class="span">Twin Flame Name at Birth</span>
+                    <input type="text" id="pfName" placeholder="Twin Flame first, middle & last name" required>
+                </div>
+                
+                <span class="span">Twin Flame Date of Birth</span>
+                
+                <select  id="pMonth" required>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select  id="pDay" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <input type="number" id="pYear" placeholder="year"  required>
+            </div>
+        </form>
+
+
+
+
+
+
+        <section class="white" id="hide">
+            <div class="orangeBcg" >
+                <p >Core Numbers</p>
+                <p class="red-bcg"  id="ytName"><br></p>
+                <p id="ptName"><br></p>
+                
+            </div>
+
+            <details>
+                <summary class="flex">
+                    <p class="left">Life Path</p>
+                    <p class="orange-text middle"><span id="ytLPNum"></span> </p>
+                    <p class="box-text "> <span id="ptLPNum"></span></p>
+                </summary>
+                <p id="lpText"></p>
+            </details>
+            
+            
+    
+            <div class="flex">
+                <p  class="left" >Birthday</p>
+                <p class="orange-text middle"><span id="ytBDNum"></span> </p>
+                <p class="box-text"> <span id="ptBDNum"></span></p>
+            </div>
+    
+            <div class="flex">
+                <p class="left">Expression / Destiny</p>
+                <p class="orange-text middle"><span id="ytEPNum"></span> </p>
+                <p class="box-text "> <span id="ptEPNum"></span></p>
+            </div>
+    
+            <div class="flex">
+                <p class="left">Soul Urge / Heart's Desire</p>
+                <p class="orange-text middle"><span id="ytHDNum"></span> </p>
+                <p class="box-text "> <span id="ptHDNum"></span></p>
+            </div>
+    
+            <div class="flex">
+                <p class="left">Personality</p>
+                <p class="orange-text middle"><span id="ytPNum"></span> </p>
+                <p class="box-text "> <span id="ptPNum"></span></p>
+                
+            </div>
+    
+            
+        </section>
+        
+
+        
+        <h2 class="hide" id="show">Probability Match: <span class="green" id="percent">85%</span></h2>
+        <div class="btn">
+            <button id="match">match now</button>
+        </div>
+        
+    </section>
+
+    
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
