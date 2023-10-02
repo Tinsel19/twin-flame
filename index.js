@@ -40,9 +40,12 @@ document.getElementById('match').addEventListener('click', ()=> {
     if (yfName.value === '' || yYear.value === '' || pfName.value === '' || pYear.value === '') {
         document.getElementById('hide').style.display = 'none';
         document.getElementById('show').style.display = 'none';
+        lpText.style.display = 'none'
+
     } else {
         document.getElementById('hide').style.display = 'block';
         document.getElementById('show').style.display = 'block';
+        lpText.style.display = 'block'
     }
     
 
@@ -1444,43 +1447,41 @@ document.getElementById('match').addEventListener('click', ()=> {
     var ppNum = ((ptPNum.textContent).trim()).split('/');
     ppNum = Number(ppNum[ppNum.length - 1]);
 
-    console.log(yENum, pENum);
-
 
     if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum !== pBNum & yENum !== pENum & ypNum !== ppNum) {
-        percent.textContent = '70%'
+        percent.textContent = '70%';
 
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum !== ppNum) {
-        percent.textContent = '90%'
+        percent.textContent = '90%';
 
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
-        percent.textContent = '95%'
+        percent.textContent = '95%';
 
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum !== ppNum) {
-        percent.textContent = '95%'
+        percent.textContent = '95%';
 
     } else if (yLpNum === pLpNum & yHDNum !== pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
-        percent.textContent = '90%'
+        percent.textContent = '90%';
 
     } else if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
-        percent.textContent = '100%'
+        percent.textContent = '100%';
 
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
         percent.textContent = '99%';
 
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum === pENum & ypNum !== ppNum) {
-        percent.textContent = '70%'
+        percent.textContent = '70%';
 
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
-        percent.textContent = '65%'
+        percent.textContent = '65%';
 
     } else {
-        percent.textContent = '0%'
+        percent.textContent = '0%';
     }
 
     var initialText = `
     <br> <br>
-    <b>DEFINITION:</b> <br> <br>
+    <h2 class='orangeF'><b>Twin Flame Definition:</b></h2> <br> <br>
     &nbsp;A twin flame, also called a mirror soul or twin soul is somebody who has the same energy frequency as us. Twin flames are one soul divided into two bodies; therefore, your twin flame is you, or half of your soul in the other person's body. The twin flame connection is designed to bring up difficulties that you need to confront and learn about during this lifetime; your twin flame may challenge you to see the real you by pointing out your strength and flaws so that you can become your best self. Twin flames have comparable interests, strengths, talents, personality characteristics, and weaknesses. They have a strong sense of completeness, accomplishment, and oneness as a group. Twin flames may have comparable life experiences and histories, allowing individuals to bond over the same tragedies or joys.
     <br> <br>
     &nbsp;Know that you can meet your twin soul anywhere in this life time. Twin souls may have unique and often challenging journeys to reunite and fulfill their spiritual purposes. They have a special connection and that their paths may involve personal growth and development. Twin flame might be born in different countries, travel to meet in other countries, and learn each other's language. In the belief system of twin souls, their union is often seen as part of a larger cosmic plan and that the idea is that their souls are destined to meet, and this meeting might involve traveling to facilitate their connection. They might meet through work, travel, social circles, or online connections.
@@ -1539,7 +1540,7 @@ document.getElementById('match').addEventListener('click', ()=> {
 
         if (sum === 1) {
             initialText += `
-            <b>Twin Flame Life Path Number 1</b> <br<br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 1</b></h2> <br<br>
 
             You are here to lead and set the way for others if your twin life path is a 1. Furthermore, number
             one energy must be fostered. So, determine who will be the household's leader. Be wary of
@@ -1552,7 +1553,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 2) {
             initialText += `
-            <b>Twin Flame Life Path Number 2</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 2</b></h2> <br> <br>
             Your mission as a twin flame life path 2 is to enter into your purpose of deepening connection,
             cooperation, and harmony for yourself and the planet. To attain this goal, you must keep your
             twin flame connection in a healthy and peaceful state. Know how to channel your emotions
@@ -1563,7 +1564,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 3) {
             initialText += `
-            <b>Twin Flame Life Path Number 3</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 3</b></h2> <br> <br>
             Learn to be cheerful, self-expressive, and creative if your twin life path is 3. Enjoy yourself and
             remember to pause to take a breath. You've come to accept this incredible gift of self-expression.
             Your soul's purpose is to elevate and inspire others by being cheerful, self-expressive, and
@@ -1573,7 +1574,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 4) {
             initialText += `
-            <b>Twin Flame Life Path Number 4</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 4</b></h2> <br> <br>
             You must first strengthen your personal foundation before you can walk into your spiritual life
             mission. Maintain your relationship's stability and order by remaining consistent and faithful to
             one another. Reliability, safety, hard effort, tolerance, loyalty, and realism are all represented by
@@ -1581,7 +1582,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 5) {
             initialText += `
-            <b>Twin Flame Life Path Number 5</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number: 5</b> </h2><br> <br>
             You should have an adventurous as well as freedom-loving spirit as a twin flame life path 5.
             Keep faith in your spiritual partner and remember that you are always united. Keep personal
             space a priority in your relationship as well. Change, freedom, and diversity are all represented
@@ -1589,15 +1590,16 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 6) {
             initialText += `
-            <b>Twin Flame Life Path Number 6</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 6</b></h2> <br> <br>
             As a twin flame life path 6, you should learn to prioritize yourself and take very good care of
             yourself first. Concentrate on you and learn to love yourself unconditionally. Follow the paths
             that make you feel happy, fulfilled, and healed. Romance, home, family, duty, nurturing,
-            stability, and balance are all represented by the number 6. <br>
+            stability, and balance are all represented by the number 6. 
+            <br>
             `
         } else if (sum === 7) {
             initialText += `
-            <b>Twin Flame Life Path Number 7 </b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 7 </b></h2> <br> <br>
             You must educate on how to be alone without feeling lonely as a 7-life path twin flame. Bring
             elements of yourself into focus, examine, cherish, and totally accept oneself. Work through and
             let go of any behaviors or routines that aren't serving your best interests. A phase of experiencing
@@ -1608,7 +1610,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 8) {
             initialText += `
-            <b>Twin Flame Life Path Number 8</b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 8</b></h2> <br> <br>
             Regain your power and influence by learning how to do so. Avoid giving energy leeches your
             strength. To feel empowered and joyful, you don't need anything beyond yourself. Try to
             appreciate and accept yourself as you are. The number 8 is associated with power, leadership,
@@ -1617,7 +1619,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 9) {
             initialText += `
-            <b>Twin Flame Life Path Number 9 </b> <br> <br>
+            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 9 </b</h2>> <br> <br>
             As a twin flame life path 9, you must completely love yourself. Consider the wider view of life
             and change. Develop forgiveness, acceptance, and charity, as well as a greater knowledge of one
             another and life in general. The number 9 represents fulfillment, completion, fullness,

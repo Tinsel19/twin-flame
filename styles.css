@@ -90,6 +90,9 @@ section {
     color: #05D087;
 }
 
+.orangeF{
+    color: #ffc439;
+}
 .div {
     border-radius: 10px;
     display: grid;
@@ -189,6 +192,7 @@ select {
 #lpText {
     font-weight: 400;
     border: 1px solid grey;
+    padding: .4rem;
 }
 
 @media (max-width: 585px) {
