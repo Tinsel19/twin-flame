@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 h2 {
@@ -77,8 +77,10 @@ section {
 
 .flex span {
     /* border: 2px solid grey; */
-    padding: 3px;
-    border-radius: 5px;
+    font-size: .8rem;
+    padding: 10px;
+    border-radius: 47%;
+    font-weight: bold;
 }
 
 .left {
@@ -188,7 +190,9 @@ select {
 
 
 .btn {
-    display: grid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .btn button {
@@ -201,6 +205,8 @@ select {
     font-size: 1rem;
     font-weight: bold;
     font-size: 1rem;
+    width: 60%;
+    text-align: center;
 }
 
 .btn button:hover {
@@ -248,7 +254,7 @@ summary {
 
 @media (max-width: 585px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
     input {
         font-size: .8rem;
@@ -284,7 +290,7 @@ summary {
 
 @media (max-width: 479px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     input {
         font-size: .6rem;
