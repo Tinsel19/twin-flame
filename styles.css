@@ -8,9 +8,6 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: whitesmoke;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding: 2rem;
     font-family: 'Roboto', sans-serif;
     line-height: 2;
 }
@@ -24,6 +21,7 @@ body {
     background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
     color: #45FFCA;
     text-shadow: 3px 3px 3px rgb(43, 38, 38);
+    margin-bottom: 80px;
 }
 
 h1 {
@@ -44,9 +42,9 @@ section {
 }
 
 .main-body {
-    background-color: whitesmoke;
-    margin-top: 50px;
-    border-radius: 10px;
+    background-color: #ffc439;
+    padding: 2rem;
+
 }
 
 .flex {
@@ -96,11 +94,12 @@ section {
 }
 
 .orangeF{
-    color: #ffc439;
+    color: black;
     text-decoration: underline;
     text-align: left;
     font-size: 1.2rem;
     padding: 0px;
+    border: 2px solid grey;
 }
 
 .lined {
@@ -124,6 +123,8 @@ section {
     gap: 10px;
     box-shadow: 3px 3px 3px grey;
     margin-bottom: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
 }
 
 
@@ -154,7 +155,7 @@ select {
     border-radius: 20px;
     padding: 0px;
     border: 1px solid rgb(209, 203, 203);
-    display: none;
+    /* display: none; */
     margin-bottom: 30px;
 }
 
@@ -168,7 +169,7 @@ select {
 }
 
 .hide {
-    display: none;
+    /* display: none; */
 }
 
 .orangeBcg p {
@@ -192,13 +193,15 @@ select {
 }
 
 .btn button {
-    background-color: #ffc439;
+    background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
     color: white;
+    text-shadow: 3px 3px 3px grey;
     border-radius: 10px;
     border: 1px solid transparent;
     padding:1rem;
     font-size: 1rem;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .btn button:hover {
@@ -217,6 +220,24 @@ select {
     border: 1px solid grey;
     padding: .4rem;
     margin-bottom: 20px;
+}
+
+details {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* background-color: yellow; */
+}
+
+summary {
+    padding: .3rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-weight: bold;
+    background-color: whitesmoke;
+    text-shadow: 3px 3px 3px grey;
+    
+    
 }
 
 @media (max-width: 585px) {
@@ -242,14 +263,16 @@ select {
     }
 
     .main-body {
-        padding: 0px;
+        padding: .7rem;
     }
 
-    body {
-        padding: 1rem;
-    }
+    
     #lpText {
         font-weight: 400;
+    }
+
+    #match {
+        font-size: 1.2rem;
     }
 }
 
@@ -276,14 +299,15 @@ select {
     }
 
     .main-body {
-        padding: 0px;
-    }
-
-    body {
         padding: .7rem;
     }
+
+    
     #lpText {
         font-weight: 400;
+    }
+    #match {
+        font-size: 1.2rem;
     }
 }
 

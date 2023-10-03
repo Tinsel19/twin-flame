@@ -1542,7 +1542,7 @@ document.getElementById('match').addEventListener('click', ()=> {
                 sum = 9
             }
         }
-        var initialText;
+        var initialText = '';
 
         if (sum === 1) {
             initialText = `
@@ -1640,7 +1640,6 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else {
             initialText = '';
-            document.getElementById('lp2Text').style.display = 'none'
         }
 
         console.log(Number(initialText))
