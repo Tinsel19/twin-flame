@@ -93,7 +93,13 @@ section {
 .orangeF{
     color: #ffc439;
     text-decoration: underline;
+    border: 1px solid grey;
 }
+
+.lined {
+    border: 1px solid grey;
+}
+
 .div {
     border-radius: 10px;
     display: grid;
@@ -200,6 +206,7 @@ select {
 #lp2Text {
     border: 1px solid grey;
     padding: .4rem;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 585px) {

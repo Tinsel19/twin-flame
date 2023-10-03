@@ -1497,7 +1497,7 @@ document.getElementById('match').addEventListener('click', ()=> {
     <br> <br>
     `
 
-    if (yLpNum !== pLpNum) {
+    if (yLpNum === pLpNum) {
         var sum = Number(yLpNum) + Number(pLpNum);
         if (sum < 10) {
             sum;
@@ -1548,92 +1548,105 @@ document.getElementById('match').addEventListener('click', ()=> {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 1</b></h2> <br<br>
 
-            You are here to lead and set the way for others if your twin life path is a 1. Furthermore, number
+            <p class='lined'>You are here to lead and set the way for others if your twin life path is a 1. Furthermore, number
             one energy must be fostered. So, determine who will be the household's leader. Be wary of
             imposing your views on others. Allow your companion to be himself or herself by remaining
             transparent and open. Be attentive to each other's needs, feelings, and goals, and work together
             toward the mutual vision of compassion, happiness, and inspiration for a healthy twin flame
             connection. Number one is associated with masculine power, beginnings, leadership,
-            individualism, and self-assurance.
+            individualism, and self-assurance.</p>
             <br>
             `
         } else if (sum === 2) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 2</b></h2> <br> <br>
-            Your mission as a twin flame life path 2 is to enter into your purpose of deepening connection,
+            
+            <p class='lined'>Your mission as a twin flame life path 2 is to enter into your purpose of deepening connection,
             cooperation, and harmony for yourself and the planet. To attain this goal, you must keep your
             twin flame connection in a healthy and peaceful state. Know how to channel your emotions
             toward your heavenly companion for a positive purpose. Furthermore, keep in mind that your
             satisfaction is far more essential than the joy of others. The energy of number 2 is associated
             with feminine power, partnerships, relationships, teamwork, harmony, diplomacy,
-            compassion, and balance. <br>
+            compassion, and balance. </p><br>
             `
         } else if (sum === 3) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 3</b></h2> <br> <br>
-            Learn to be cheerful, self-expressive, and creative if your twin life path is 3. Enjoy yourself and
+            
+            <p class='lined'>Learn to be cheerful, self-expressive, and creative if your twin life path is 3. Enjoy yourself and
             remember to pause to take a breath. You've come to accept this incredible gift of self-expression.
             Your soul's purpose is to elevate and inspire others by being cheerful, self-expressive, and
             innovative. It is critical that you devote time and effort to artistic channels for self-expression.
             Number three is mostly about youthfulness, inspiration, communication, creativity, and
-            expression. <br>
+            expression.</p> <br>
             `
         } else if (sum === 4) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 4</b></h2> <br> <br>
-            You must first strengthen your personal foundation before you can walk into your spiritual life
+            
+            <p class='lined'>You must first strengthen your personal foundation before you can walk into your spiritual life
             mission. Maintain your relationship's stability and order by remaining consistent and faithful to
             one another. Reliability, safety, hard effort, tolerance, loyalty, and realism are all represented by
-            the number 4. <br>
+            the number 4. </p><br>
             `
         } else if (sum === 5) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number: 5</b> </h2><br> <br>
-            You should have an adventurous as well as freedom-loving spirit as a twin flame life path 5.
+            <p class='lined'>You should have an adventurous as well as freedom-loving spirit as a twin flame life path 5.
             Keep faith in your spiritual partner and remember that you are always united. Keep personal
             space a priority in your relationship as well. Change, freedom, and diversity are all represented
-            by the number 5. <br>
+            by the number 5.</p> <br>
             `
         } else if (sum === 6) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 6</b></h2> <br> <br>
-            As a twin flame life path 6, you should learn to prioritize yourself and take very good care of
+            
+            <p class='lined'>As a twin flame life path 6, you should learn to prioritize yourself and take very good care of
             yourself first. Concentrate on you and learn to love yourself unconditionally. Follow the paths
             that make you feel happy, fulfilled, and healed. Romance, home, family, duty, nurturing,
-            stability, and balance are all represented by the number 6. 
+            stability, and balance are all represented by the number 6. </p>
             <br>
             `
         } else if (sum === 7) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 7 </b></h2> <br> <br>
-            You must educate on how to be alone without feeling lonely as a 7-life path twin flame. Bring
+            
+            <p class='lined'>You must educate on how to be alone without feeling lonely as a 7-life path twin flame. Bring
             elements of yourself into focus, examine, cherish, and totally accept oneself. Work through and
             let go of any behaviors or routines that aren't serving your best interests. A phase of experiencing
             development is approaching, and you should take advantage of it by utilizing your connection
             with your twin flame. The number 7 denotes spiritual awakening,
             enlightenment, intelligence, intuition, spirituality, clairvoyance, analysis, investigation, and
-            knowledge. <br>
+            knowledge.</p> <br>
             `
         } else if (sum === 8) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 8</b></h2> <br> <br>
-            Regain your power and influence by learning how to do so. Avoid giving energy leeches your
+            
+            <p class='lined'>Regain your power and influence by learning how to do so. Avoid giving energy leeches your
             strength. To feel empowered and joyful, you don't need anything beyond yourself. Try to
             appreciate and accept yourself as you are. The number 8 is associated with power, leadership,
-            control, and prosperity. <br>
+            control, and prosperity. </p><br>
 
             `
         } else if (sum === 9) {
             initialText = `
             <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: 9 </b</h2>> <br> <br>
-            As a twin flame life path 9, you must completely love yourself. Consider the wider view of life
+            
+            <p class='lined'>As a twin flame life path 9, you must completely love yourself. Consider the wider view of life
             and change. Develop forgiveness, acceptance, and charity, as well as a greater knowledge of one
             another and life in general. The number 9 represents fulfillment, completion, fullness,
-            humanitarian, and generosity. <br>
+            humanitarian, and generosity.</p> <br>
             `
+        } else {
+            initialText = '';
+            document.getElementById('lp2Text').style.display = 'none'
         }
+
+        console.log(Number(initialText))
+        document.getElementById('lp2Text').innerHTML = initialText;
     };
-    document.getElementById('lp2Text').innerHTML = initialText;
+    
 
 
     
