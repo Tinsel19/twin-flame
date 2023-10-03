@@ -1487,17 +1487,17 @@ document.getElementById('match').addEventListener('click', ()=> {
     lpText.innerHTML = `
     <br> <br>
     <h2 class='orangeF'><b>Twin Flame Definition:</b></h2> <br> <br>
-    &nbsp;A twin flame, also called a mirror soul or twin soul is somebody who has the same energy frequency as us. Twin flames are one soul divided into two bodies; therefore, your twin flame is you, or half of your soul in the other person's body. The twin flame connection is designed to bring up difficulties that you need to confront and learn about during this lifetime; your twin flame may challenge you to see the real you by pointing out your strength and flaws so that you can become your best self. Twin flames have comparable interests, strengths, talents, personality characteristics, and weaknesses. They have a strong sense of completeness, accomplishment, and oneness as a group. Twin flames may have comparable life experiences and histories, allowing individuals to bond over the same tragedies or joys.
+    <p class='lined'>&nbsp;A twin flame, also called a mirror soul or twin soul is somebody who has the same energy frequency as us. Twin flames are one soul divided into two bodies; therefore, your twin flame is you, or half of your soul in the other person's body. The twin flame connection is designed to bring up difficulties that you need to confront and learn about during this lifetime; your twin flame may challenge you to see the real you by pointing out your strength and flaws so that you can become your best self. Twin flames have comparable interests, strengths, talents, personality characteristics, and weaknesses. They have a strong sense of completeness, accomplishment, and oneness as a group. Twin flames may have comparable life experiences and histories, allowing individuals to bond over the same tragedies or joys.
     <br> <br>
     &nbsp;Know that you can meet your twin soul anywhere in this life time. Twin souls may have unique and often challenging journeys to reunite and fulfill their spiritual purposes. They have a special connection and that their paths may involve personal growth and development. Twin flame might be born in different countries, travel to meet in other countries, and learn each other's language. In the belief system of twin souls, their union is often seen as part of a larger cosmic plan and that the idea is that their souls are destined to meet, and this meeting might involve traveling to facilitate their connection. They might meet through work, travel, social circles, or online connections.
     <br> <br>
     &nbsp;Within twin flame connections, for example, recurring numerals and synchronistic patterns like angle numbers 1111, 2222, 3333, 1212, 111, or 1010 are prevalent. These twin flame numbers give much-needed guidance and confidence, as well as guiding the two divided souls back together in the physical world.
     <br> <br>
     &nbsp;In numerology, The main analysis of who you are and what you are made of, are the five core numbers in your chart such as: the Life Path, Birthday number, Expression/Destiny, Heart's Desire/Soul Urge, and the Personality numbers. The life path numbers of twin flames might be identical or different since the life path number represents the path you’ll take in this life. If the twin flame's life path numbers are different, find the total of both twins' life path numbers by adding each twin life path number together to get a single digit. This combined life path number discloses important details about your twin flame journey.
-    <br> <br>
+    </p><br> <br>
     `
 
-    if (yLpNum === pLpNum) {
+    if (yLpNum !== pLpNum & percent.textContent !== '0%') {
         var sum = Number(yLpNum) + Number(pLpNum);
         if (sum < 10) {
             sum;

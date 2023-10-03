@@ -12,6 +12,7 @@ body {
     padding-bottom: 3rem;
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
+    line-height: 2;
 }
 
 .head {
@@ -32,6 +33,10 @@ h1 {
 h2 {
     text-align: center;
     padding: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 section {
@@ -93,11 +98,15 @@ section {
 .orangeF{
     color: #ffc439;
     text-decoration: underline;
-    border: 1px solid grey;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0px;
 }
 
 .lined {
     border: 1px solid grey;
+    font-size: .9rem;
+    font-weight: 300;
 }
 
 .div {
@@ -197,9 +206,10 @@ select {
 }
 
 #lpText {
-    font-weight: 400;
+    font-weight: 300;
     border: 1px solid grey;
     padding: .4rem;
+    font-size: .9rem;
     margin-bottom: 10px;
 }
 
