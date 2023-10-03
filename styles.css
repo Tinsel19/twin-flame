@@ -209,7 +209,7 @@ select {
 
 .btn button {
     background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
-    color: white;
+    color: black;
     text-shadow: 3px 3px 3px grey;
     border-radius: 10px;
     border: 1px solid transparent;
