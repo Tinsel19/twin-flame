@@ -1792,10 +1792,17 @@ document.getElementById('match').addEventListener('click', ()=> {
     
 
 
+})
+
+document.getElementById('reset').addEventListener('click', ()=> {
+    yfName.value = '';
+    pfName.value = '';
+    yYear.value = '';
+    pYear.value = '';
     
-
-
-    
-
-
+    document.getElementById('hide').style.display = 'none';
+    document.getElementById('show').style.display = 'none';
+    lpText.style.display = 'none';
+    document.getElementById('lp2Text').style.display = 'none';
+    document.getElementById('details').style.display = 'none';
 })
