@@ -41,13 +41,16 @@ document.getElementById('match').addEventListener('click', ()=> {
         document.getElementById('hide').style.display = 'none';
         document.getElementById('show').style.display = 'none';
         lpText.style.display = 'none';
-        document.getElementById('lp2Text').style.display = 'none'
+        document.getElementById('lp2Text').style.display = 'none';
+        document.getElementById('details').style.display = 'none';
+
 
     } else {
         document.getElementById('hide').style.display = 'block';
         document.getElementById('show').style.display = 'block';
         lpText.style.display = 'block';
-        document.getElementById('lp2Text').style.display = 'block'
+        document.getElementById('lp2Text').style.display = 'block';
+        document.getElementById('details').style.display = 'block'
     }
     
 

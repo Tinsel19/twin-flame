@@ -43,7 +43,7 @@ section {
 .main-body {
     background-color: #ffc439;
     padding: 2rem;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -210,23 +210,23 @@ select {
 
 #lpText {
     font-weight: 300;
-    border: 1px solid grey;
+    border: 3px solid ;
     padding: .4rem;
     font-size: .9rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #lp2Text {
-    border: 1px solid grey;
+    border: 3px solid black;
     padding: .4rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 details {
     margin-bottom: 20px;
     border: 1px solid grey;
     border-radius: 10px;
-    /* background-color: yellow; */
+    background-color: white;
 }
 
 summary {
