@@ -1452,6 +1452,24 @@ document.getElementById('match').addEventListener('click', ()=> {
     var ppNum = ((ptPNum.textContent).trim()).split('/');
     ppNum = Number(ppNum[ppNum.length - 1]);
 
+    ytLPNum.style.border = '2px solid none';
+    ptLPNum.style.border = '2px solid none';
+
+    ytBDNum.style.border = '2px solid none';
+    ptBDNum.style.border = '2px solid none';
+
+    ytHDNum.style.border = '2px solid none';
+    ptHDNum.style.border = '2px solid none';
+
+    ytEPNum.style.border = '2px solid none';
+    ptEPNum.style.border = '2px solid none';
+
+    ytEPNum.style.border = '2px solid none';
+    ptEPNum.style.border = '2px solid none';
+
+    ytPNum.style.border = '2px solid none';
+    ptPNum.style.border = '2px solid none';
+
 
     if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum !== pBNum & yENum !== pENum & ypNum !== ppNum) {
         percent.textContent = '70%';
@@ -1690,7 +1708,7 @@ document.getElementById('match').addEventListener('click', ()=> {
 
         if (sum === 1) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>1</span></b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>1</span></b></h2> <br>
 
             <p class='lined'>You are here to lead and set the way for others if your twin life path is a 1. Furthermore, number
             one energy must be fostered. So, determine who will be the household's leader. Be wary of
@@ -1703,7 +1721,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 2) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>2</span></b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>2</span></b></h2> <br>
             
             <p class='lined'>Your mission as a twin flame life path 2 is to enter into your purpose of deepening connection,
             cooperation, and harmony for yourself and the planet. To attain this goal, you must keep your
@@ -1715,7 +1733,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 3) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>3</span></b></h2> <br> 
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>3</span></b></h2> <br> 
             
             <p class='lined'>Learn to be cheerful, self-expressive, and creative if your twin life path is 3. Enjoy yourself and
             remember to pause to take a breath. You've come to accept this incredible gift of self-expression.
@@ -1726,7 +1744,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 4) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>4</span></b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>4</span></b></h2> <br>
             
             <p class='lined'>You must first strengthen your personal foundation before you can walk into your spiritual life
             mission. Maintain your relationship's stability and order by remaining consistent and faithful to
@@ -1735,7 +1753,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 5) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number: <span class='green'>5</span></b> </h2><br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>5</span></b> </h2><br>
             <p class='lined'>You should have an adventurous as well as freedom-loving spirit as a twin flame life path 5.
             Keep faith in your spiritual partner and remember that you are always united. Keep personal
             space a priority in your relationship as well. Change, freedom, and diversity are all represented
@@ -1743,7 +1761,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 6) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>6</span></b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>6</span></b></h2> <br>
             
             <p class='lined'>As a twin flame life path 6, you should learn to prioritize yourself and take very good care of
             yourself first. Concentrate on you and learn to love yourself unconditionally. Follow the paths
@@ -1753,7 +1771,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 7) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>7</span> </b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>7</span> </b></h2>  <br>
             
             <p class='lined'>You must educate on how to be alone without feeling lonely as a 7-life path twin flame. Bring
             elements of yourself into focus, examine, cherish, and totally accept oneself. Work through and
@@ -1765,7 +1783,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 8) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>8</span></b></h2> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span><span class='green'>8</span></b></h2> <br>
             
             <p class='lined'>Regain your power and influence by learning how to do so. Avoid giving energy leeches your
             strength. To feel empowered and joyful, you don't need anything beyond yourself. Try to
@@ -1775,7 +1793,7 @@ document.getElementById('match').addEventListener('click', ()=> {
             `
         } else if (sum === 9) {
             initialText = `
-            <h2 class='orangeF'><b>Your Twin Flame Life Path Number is: <span class='green'>9</span> </b</h2>> <br>
+            <h2 class='orangeF'><b><span class='underline'>Your Twin Flame Life Path Number is:</span> <span class='green'>9</span> </b</h2>> <br>
             
             <p class='lined'>As a twin flame life path 9, you must completely love yourself. Consider the wider view of life
             and change. Develop forgiveness, acceptance, and charity, as well as a greater knowledge of one
