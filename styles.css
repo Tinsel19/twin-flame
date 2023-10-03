@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -254,7 +254,7 @@ summary {
 
 @media (max-width: 585px) {
     h1 {
-        font-size: 2.1rem;
+        font-size: 1.4rem;
     }
     input {
         font-size: .8rem;
@@ -290,7 +290,7 @@ summary {
 
 @media (max-width: 479px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     input {
         font-size: .6rem;
