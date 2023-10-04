@@ -52,6 +52,25 @@ document.getElementById('match').addEventListener('click', ()=> {
         document.getElementById('lp2Text').style.display = 'block';
         document.getElementById('details').style.display = 'block'
     }
+
+    ytLPNum.style.border = '2px solid white';
+    ptLPNum.style.border = '2px solid white';
+
+    ytBDNum.style.border = '2px solid white';
+    ptBDNum.style.border = '2px solid white';
+
+    ytHDNum.style.border = '2px solid white';
+    ptHDNum.style.border = '2px solid white';
+
+    ytEPNum.style.border = '2px solid white';
+    ptEPNum.style.border = '2px solid white';
+
+    ytEPNum.style.border = '2px solid white';
+    ptEPNum.style.border = '2px solid white';
+
+    ytPNum.style.border = '2px solid white';
+    ptPNum.style.border = '2px solid white';
+
     
 
     // Y date of birth 
@@ -1471,6 +1490,9 @@ document.getElementById('match').addEventListener('click', ()=> {
     ptPNum.style.border = '2px solid none';
 
 
+    
+    document.getElementById('lp2Text').innerHTML = ''
+
     if (yLpNum === pLpNum & yHDNum === pHDNum & yBNum !== pBNum & yENum !== pENum & ypNum !== ppNum) {
         percent.textContent = '70%';
 
@@ -1624,20 +1646,11 @@ document.getElementById('match').addEventListener('click', ()=> {
     } else if (yLpNum !== pLpNum & yHDNum === pHDNum & yBNum === pBNum & yENum !== pENum & ypNum === ppNum) {
         percent.textContent = '65%';
 
-        ytLPNum.style.border = '2px solid green';
-        ptLPNum.style.border = '2px solid green';
-
         ytBDNum.style.border = '2px solid green';
         ptBDNum.style.border = '2px solid green';
 
         ytHDNum.style.border = '2px solid green';
         ptHDNum.style.border = '2px solid green';
-
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
-
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
 
         ytPNum.style.border = '2px solid green';
         ptPNum.style.border = '2px solid green';
@@ -1803,8 +1816,6 @@ document.getElementById('match').addEventListener('click', ()=> {
         } else {
             initialText = '';
         }
-
-        console.log(Number(initialText))
         document.getElementById('lp2Text').innerHTML = initialText;
     };
     
@@ -1823,4 +1834,25 @@ document.getElementById('reset').addEventListener('click', ()=> {
     lpText.style.display = 'none';
     document.getElementById('lp2Text').style.display = 'none';
     document.getElementById('details').style.display = 'none';
+    document.getElementById('lp2Text').innerHTML = '';
+    percent.textContent = '0%'
+
+    ytLPNum.style.border = '2px solid white';
+    ptLPNum.style.border = '2px solid white';
+
+    ytBDNum.style.border = '2px solid white';
+    ptBDNum.style.border = '2px solid white';
+
+    ytHDNum.style.border = '2px solid white';
+    ptHDNum.style.border = '2px solid white';
+
+    ytEPNum.style.border = '2px solid white';
+    ptEPNum.style.border = '2px solid white';
+
+    ytEPNum.style.border = '2px solid white';
+    ptEPNum.style.border = '2px solid white';
+
+    ytPNum.style.border = '2px solid white';
+    ptPNum.style.border = '2px solid white';
+
 })
