@@ -1,53 +1,56 @@
 
 
-var yfName = document.getElementById('yfName');
-var yMonth = document.getElementById('yMonth');
-var yDay = document.getElementById('yDay');
-var yYear = document.getElementById('yYear');
+var yfName = document.getElementById('yffName');
+var yMonth = document.getElementById('yfMonth');
+var yDay = document.getElementById('yfDay');
+var yYear = document.getElementById('yfYear');
 
-var pfName = document.getElementById('pfName');
-var pMonth = document.getElementById('pMonth');
-var pDay = document.getElementById('pDay');
-var pYear = document.getElementById('pYear');
+var pfName = document.getElementById('pffName');
+var pMonth = document.getElementById('pfMonth');
+var pDay = document.getElementById('pfDay');
+var pYear = document.getElementById('pfYear');
 
-var ytName = document.getElementById('ytName');
-var ptName = document.getElementById('ptName');
+var ytName = document.getElementById('fytName');
+var ptName = document.getElementById('fptName');
 
-var ytLPNum = document.getElementById('ytLPNum');
-var ptLPNum = document.getElementById('ptLPNum');
+var ytLPNum = document.getElementById('fytLPNum');
+var ptLPNum = document.getElementById('fptLPNum');
 
-var ytBDNum = document.getElementById('ytBDNum');
-var ptBDNum = document.getElementById('ptBDNum');
+var ytBDNum = document.getElementById('fytBDNum');
+var ptBDNum = document.getElementById('fptBDNum');
 
-var ytEPNum = document.getElementById('ytEPNum');
-var ptEPNum = document.getElementById('ptEPNum');
+var ytEPNum = document.getElementById('fytEPNum');
+var ptEPNum = document.getElementById('fptEPNum');
 
-var ytHDNum = document.getElementById('ytHDNum');
-var ptHDNum = document.getElementById('ptHDNum');
+var ytHDNum = document.getElementById('fytHDNum');
+var ptHDNum = document.getElementById('fptHDNum');
 
-var ytPNum = document.getElementById('ytPNum');
-var ptPNum = document.getElementById('ptPNum');
+var ytPNum = document.getElementById('fytPNum');
+var ptPNum = document.getElementById('fptPNum');
 
-var lpText = document.getElementById('lpText');
-var percent = document.getElementById('percent');
-
-
+var lpText = document.getElementById('flpText');
+var percent = document.getElementById('fpercent');
 
 
 
-document.getElementById('match').addEventListener('click', ()=> {
+
+
+document.getElementById('fmatch').addEventListener('click', ()=> {
+
+    var tezt = document.querySelector('.flex').querySelector('span');
+    tezt.style.border = '3px solid none';
 
     if (yfName.value === '' || yYear.value === '' || pfName.value === '' || pYear.value === '') {
-        document.getElementById('hide').style.display = 'none';
-        document.getElementById('show').style.display = 'none';
+        document.getElementById('thider').style.display = 'none';
+        document.getElementById('showc').style.display = 'none';
         lpText.style.display = 'none';
         document.getElementById('lp2Text').style.display = 'none';
         document.getElementById('details').style.display = 'none';
 
 
     } else {
-        document.getElementById('hide').style.display = 'block';
-        document.getElementById('show').style.display = 'block';
+        document.getElementById('thider').style.display = 'block';
+        document.getElementById('showc').style.display = 'block';
         lpText.style.display = 'block';
         document.getElementById('lp2Text').style.display = 'block';
         document.getElementById('details').style.display = 'block'
@@ -743,17 +746,6 @@ document.getElementById('match').addEventListener('click', ()=> {
             count = sum
         }
     };
-
-    
-
-
-
-
-
-
-
-
-
 
     
 
@@ -1483,9 +1475,6 @@ document.getElementById('match').addEventListener('click', ()=> {
     ytEPNum.style.border = '2px solid none';
     ptEPNum.style.border = '2px solid none';
 
-    ytEPNum.style.border = '2px solid none';
-    ptEPNum.style.border = '2px solid none';
-
     ytPNum.style.border = '2px solid none';
     ptPNum.style.border = '2px solid none';
 
@@ -1529,9 +1518,6 @@ document.getElementById('match').addEventListener('click', ()=> {
         ytEPNum.style.border = '2px solid green';
         ptEPNum.style.border = '2px solid green';
 
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
-
         ytPNum.style.border = '2px solid green';
         ptPNum.style.border = '2px solid green';
 
@@ -1543,9 +1529,6 @@ document.getElementById('match').addEventListener('click', ()=> {
 
         ytHDNum.style.border = '2px solid green';
         ptHDNum.style.border = '2px solid green';
-
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
 
         ytBDNum.style.border = '2px solid green';
         ptBDNum.style.border = '2px solid green';
@@ -1568,9 +1551,6 @@ document.getElementById('match').addEventListener('click', ()=> {
         ytEPNum.style.border = '2px solid green';
         ptEPNum.style.border = '2px solid green';
 
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
-
     } else if (yLpNum === pLpNum & yHDNum !== pHDNum & yBNum === pBNum & yENum === pENum & ypNum === ppNum) {
         percent.textContent = '90%';
         ytLPNum.style.border = '2px solid green';
@@ -1578,9 +1558,6 @@ document.getElementById('match').addEventListener('click', ()=> {
 
         ytBDNum.style.border = '2px solid green';
         ptBDNum.style.border = '2px solid green';
-
-        ytEPNum.style.border = '2px solid green';
-        ptEPNum.style.border = '2px solid green';
 
         ytEPNum.style.border = '2px solid green';
         ptEPNum.style.border = '2px solid green';
@@ -1823,14 +1800,14 @@ document.getElementById('match').addEventListener('click', ()=> {
 
 })
 
-document.getElementById('reset').addEventListener('click', ()=> {
+document.getElementById('freset').addEventListener('click', ()=> {
     yfName.value = '';
     pfName.value = '';
     yYear.value = '';
     pYear.value = '';
     
-    document.getElementById('hide').style.display = 'none';
-    document.getElementById('show').style.display = 'none';
+    document.getElementById('thider').style.display = 'none';
+    document.getElementById('showc').style.display = 'none';
     lpText.style.display = 'none';
     document.getElementById('lp2Text').style.display = 'none';
     document.getElementById('details').style.display = 'none';

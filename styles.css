@@ -21,6 +21,8 @@ body {
     color: #45FFCA;
     text-shadow: 3px 3px 3px rgb(43, 38, 38);
     margin-bottom: 40px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 h1 {
@@ -44,6 +46,7 @@ section {
     background-color: #ffc439;
     padding: 2rem;
     height: 100%;
+    margin-bottom: 50px;
 
 }
 
@@ -78,9 +81,10 @@ section {
 .flex span {
     /* border: 2px solid grey; */
     font-size: .8rem;
-    padding: 10px;
+    padding: 5px;
     border-radius: 47%;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .left {
@@ -202,17 +206,19 @@ select {
     border-top-right-radius: 20px;
 }
 
+.styled-input input {
+    text-align: center;
+}
 
 
 
-
-.btn {
+#tbtn {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-.btn button {
+#tbtn button {
     background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
     color: black;
     text-shadow: 3px 3px 3px grey;
@@ -226,15 +232,15 @@ select {
     text-align: center;
 }
 
-.btn button:hover {
+#tbtn button:hover {
     opacity: .8;
 }
 
-.btn button:active {
+#tbtn button:active {
     background-image: linear-gradient(80deg, #61ebb4, #c2f5a9, white);
 }
 
-#lpText {
+#flpText {
     font-weight: 300;
     border: 3px solid ;
     padding: .4rem;
@@ -246,6 +252,12 @@ select {
     border: 3px solid black;
     padding: .4rem;
     margin-bottom: 50px;
+}
+
+#fpercent {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 details {
