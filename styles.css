@@ -210,7 +210,17 @@ select {
     text-align: center;
 }
 
-
+.span{
+    text-align: center;
+    color: white;
+    background-color: #98EECC;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 4px;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
 
 #tbtn {
     display: grid;
@@ -283,6 +293,14 @@ summary {
 
 .border-left {
     border-left: 2px solid black;
+}
+
+input {
+    text-align: center;
+}
+
+select {
+    text-align: center;
 }
 
 @media (max-width: 585px) {
